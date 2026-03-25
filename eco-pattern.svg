@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1100" viewBox="0 0 1100 1100">
+  <rect width="1100" height="1100" fill="#F0EBE0"/>
+
+  <!-- ===================== ROW 1 ===================== -->
+
+  <!-- 1. Sprout / Plant -->
+  <g transform="translate(90,90)">
+    <!-- stem -->
+    <line x1="30" y1="72" x2="30" y2="30" stroke="#1A3F54" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- left leaf fill -->
+    <ellipse cx="18" cy="40" rx="13" ry="19" fill="#7BBFAA" transform="rotate(-35 18 40)"/>
+    <!-- left leaf outline -->
+    <ellipse cx="18" cy="40" rx="13" ry="19" fill="none" stroke="#1A3F54" stroke-width="2" transform="rotate(-35 18 40)"/>
+    <line x1="18" y1="28" x2="26" y2="44" stroke="#1A3F54" stroke-width="1.2"/>
+    <!-- right leaf fill -->
+    <ellipse cx="42" cy="40" rx="13" ry="19" fill="#7BBFAA" transform="rotate(35 42 40)"/>
+    <!-- right leaf outline -->
+    <ellipse cx="42" cy="40" rx="13" ry="19" fill="none" stroke="#1A3F54" stroke-width="2" transform="rotate(35 42 40)"/>
+    <line x1="42" y1="28" x2="34" y2="44" stroke="#1A3F54" stroke-width="1.2"/>
+    <!-- ground line -->
+    <line x1="15" y1="72" x2="45" y2="72" stroke="#1A3F54" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- 2. Leaf -->
+  <g transform="translate(305,88)">
+    <!-- leaf fill -->
+    <path d="M30 75 C20 55 5 35 12 15 C20 -2 50 0 52 18 C55 38 42 58 30 75Z" fill="#7BBFAA"/>
+    <path d="M30 75 C20 55 5 35 12 15 C20 -2 50 0 52 18 C55 38 42 58 30 75Z" fill="none" stroke="#1A3F54" stroke-width="2.2" stroke-linejoin="round"/>
+    <!-- midrib -->
+    <line x1="30" y1="75" x2="32" y2="12" stroke="#1A3F54" stroke-width="1.5"/>
+    <!-- veins -->
+    <line x1="32" y1="30" x2="18" y2="42" stroke="#1A3F54" stroke-width="1"/>
+    <line x1="32" y1="40" x2="20" y2="50" stroke="#1A3F54" stroke-width="1"/>
+    <line x1="33" y1="50" x2="44" y2="42" stroke="#1A3F54" stroke-width="1"/>
+  </g>
+
+  <!-- 3. Clothes hanger recycle -->
+  <g transform="translate(510,88)">
+    <!-- circular arrows (recycle) fill -->
+    <circle cx="30" cy="38" r="26" fill="#F5D880" opacity="0.4"/>
+    <path d="M30 14 A24 24 0 0 1 54 38" fill="none" stroke="#1A3F54" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="54,38 60,30 62,42" fill="#1A3F54"/>
+    <path d="M54 38 A24 24 0 0 1 18 56" fill="none" stroke="#1A3F54" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="18,56 10,58 16,68" fill="#1A3F54"/>
+    <path d="M18 56 A24 24 0 0 1 30 14" fill="none" stroke="#1A3F54" stroke-width="2.5" stroke-linecap="round"/>
+    <polygon points="30,14 24,6 36,6" fill="#1A3F54"/>
+    <!-- hanger -->
+    <line x1="30" y1="30" x2="30" y2="22" stroke="#1A3F54" stroke-width="2" stroke-linecap="round"/>
+    <path d="M30 22 Q30 16 36 16" fill="none" stroke="#1A3F54" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M15 44 Q14 48 30 52 Q46 48 45 44" fill="none" stroke="#1A3F54" stroke-width="2" stroke-linecap="round"/>
+  </g>

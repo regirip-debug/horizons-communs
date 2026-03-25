@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 380" width="500" height="380">
+  <rect width="500" height="380" fill="none"/>
+
+  <!--
+    Logo Horizons Communs — deux H entrelacés
+    Teal  : #1C7272   |   Or : #C49500
+    Structure : 2 H italiques qui se croisent,
+    teal passe DEVANT en haut, or passe DEVANT en bas
+  -->
+
+  <defs>
+    <!-- Zone haute : teal passe devant -->
+    <clipPath id="top-half">
+      <rect x="0" y="0" width="500" height="192"/>
+    </clipPath>
+    <!-- Zone basse : or passe devant -->
+    <clipPath id="bot-half">
+      <rect x="0" y="188" width="500" height="192"/>
+    </clipPath>
+  </defs>
+
+  <!-- Transformation italique : légèrement inclinée vers la droite -->
+  <g transform="translate(250,190) skewX(-10) translate(-250,-190)">
+
+    <!-- ═══════════════════════════════
+         COUCHE 1 — H TEAL (derrière)
+    ═══════════════════════════════ -->
+    <g fill="#1C7272">
+      <!-- Pilier gauche -->
+      <rect x="78"  y="44" width="42" height="292"/>
+      <!-- Pilier droit (centre-gauche du logo) -->
+      <rect x="246" y="44" width="42" height="292"/>
+      <!-- Traverse -->
+      <rect x="78"  y="170" width="210" height="40"/>
+    </g>
+
+    <!-- ═══════════════════════════════
+         COUCHE 2 — H OR (devant par défaut)
+    ═══════════════════════════════ -->
+    <g fill="#C49500">
+      <!-- Pilier gauche (centre-droite du logo) -->
+      <rect x="220" y="44" width="42" height="292"/>
+      <!-- Pilier droit -->
+      <rect x="388" y="44" width="42" height="292"/>
+      <!-- Traverse -->
+      <rect x="220" y="170" width="210" height="40"/>
+    </g>
+
+    <!-- ═══════════════════════════════
+         COUCHE 3 — H TEAL repasse DEVANT
+         uniquement dans la moitié HAUTE
+    ═══════════════════════════════ -->
+    <g fill="#1C7272" clip-path="url(#top-half)">
+      <!-- Pilier gauche -->
+      <rect x="78"  y="44" width="42" height="292"/>
+      <!-- Pilier droit -->
+      <rect x="246" y="44" width="42" height="292"/>
+      <!-- Traverse -->
+      <rect x="78"  y="170" width="210" height="40"/>
+    </g>
+
+    <!-- ═══════════════════════════════
+         COUCHE 4 — H OR repasse DEVANT
+         uniquement dans la moitié BASSE
+    ═══════════════════════════════ -->
+    <g fill="#C49500" clip-path="url(#bot-half)">
+      <!-- Pilier gauche -->
+      <rect x="220" y="44" width="42" height="292"/>
+      <!-- Pilier droit -->
+      <rect x="388" y="44" width="42" height="292"/>
+      <!-- Traverse -->
+      <rect x="220" y="170" width="210" height="40"/>
+    </g>
+
+  </g>
+
+</svg>

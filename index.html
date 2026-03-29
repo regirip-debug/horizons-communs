@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Horizons Communs — Management de transition, formation terrain, conférences</title>
+  <meta name="description" content="Horizons Communs accompagne les organisations en transition : management opérationnel, formation terrain et conférences pour les dirigeants et équipes."/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #F3ECD8; color: #1A3F54; }
+    .badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(184,153,106,.15); color: #9A7E52; font-size: .75rem; font-weight: 700; letter-spacing: .05em; padding: 4px 12px; border-radius: 999px; text-transform: uppercase; }
+    .card-article:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(18,47,66,.12); }
+    .card-article { transition: transform .25s ease, box-shadow .25s ease; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-[#122F42] border-b border-[#1A3F54]">
+  <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="./index.html" class="flex items-center gap-2">
+      <img src="./logo-hc.svg" alt="Horizons Communs" class="h-8 w-auto" style="filter:brightness(0) invert(1);opacity:.9;"/>
+      <span class="font-bold text-white text-sm">Horizons Communs</span>
+    </a>
+    <div class="flex items-center gap-6">
+      <a href="#services" class="text-sm text-slate-300 hover:text-white transition-colors hidden sm:block">Services</a>
+      <a href="#blog" class="text-sm text-slate-300 hover:text-white transition-colors hidden sm:block">Articles</a>
+      <a href="#contact" class="text-sm bg-[#B8996A] hover:bg-[#A08458] text-white font-semibold px-4 py-2 rounded-full transition-colors">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="bg-[#0D2B3E] py-24 px-4">
+  <div class="max-w-3xl mx-auto text-center">
+    <span class="badge mb-6 block w-fit mx-auto" style="background:rgba(184,153,106,.2);color:#C9A97A;">Management · Formation · Conférences</span>
+    <h1 class="text-4xl sm:text-6xl font-black text-white leading-tight mb-6">
+      Traverser la transition.<br/>
+      <span style="color:#B8996A;">Avec méthode.</span>
+    </h1>
+    <p class="text-lg text-slate-300 leading-relaxed mb-10 max-w-2xl mx-auto">
+      Horizons Communs accompagne les dirigeants, équipes et organisations dans les périodes de changement :
+      management de transition opérationnel, formation terrain et conférences engagées.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-[#B8996A] hover:bg-[#A08458] text-white font-semibold px-8 py-4 rounded-full transition-colors text-base">
+        Discutons de votre situation →
+      </a>
+      <a href="#services" class="inline-flex items-center justify-center gap-2 border border-slate-500 hover:border-white text-slate-300 hover:text-white font-semibold px-8 py-4 rounded-full transition-colors text-base">
+        Nos services
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CHIFFRES -->
+<section class="bg-[#122F42] py-12 px-4">
+  <div class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+    <div>
+      <p class="text-3xl font-black text-[#B8996A]">15+</p>
+      <p class="text-sm text-slate-400 mt-1">ans d'expérience terrain</p>
+    </div>
+    <div>
+      <p class="text-3xl font-black text-[#B8996A]">200+</p>
+      <p class="text-sm text-slate-400 mt-1">organisations accompagnées</p>
+    </div>
+    <div>
+      <p class="text-3xl font-black text-[#B8996A]">50+</p>
+      <p class="text-sm text-slate-400 mt-1">conférences animées</p>
+    </div>
+    <div>
+      <p class="text-3xl font-black text-[#B8996A]">98%</p>
+      <p class="text-sm text-slate-400 mt-1">de satisfaction client</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20 px-4">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-14">
+      <span class="badge mb-4">Ce que nous faisons</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-[#0F2A3A]">Trois formes d'intervention,<br/>un seul objectif : avancer.</h2>
+    </div>
+
+    <div class="grid sm:grid-cols-3 gap-6">
+
+      <!-- Service 1 -->
+      <div class="bg-white border border-[#E8DCC8] rounded-3xl p-8">
+        <div class="w-12 h-12 bg-[#122F42] rounded-2xl flex items-center justify-center mb-6">
+          <svg class="w-6 h-6 text-[#B8996A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color:#B8996A;">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-black text-[#0F2A3A] mb-3">Management de transition</h3>
+        <p class="text-slate-500 text-sm leading-relaxed mb-4">
+          Prise en charge opérationnelle pendant les phases critiques : restructuration, remplacement de dirigeant, croissance rapide, crise. On s'intègre, on pilote, on passe la main.
+        </p>
+        <ul class="text-sm text-slate-500 space-y-2">
+          <li class="flex gap-2"><span style="color:#B8996A;font-weight:700;">→</span> Diagnostic rapide (72h)</li>
+          <li class="flex gap-2"><span style="color:#B8996A;font-weight:700;">→</span> Mission de 3 à 18 mois</li>
+          <li class="flex gap-2"><span style="color:#B8996A;font-weight:700;">→</span> Transfert de compétences inclus</li>
+        </ul>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="bg-[#122F42] rounded-3xl p-8 relative overflow-hidden">
+        <div class="w-12 h-12 bg-[#B8996A] rounded-2xl flex items-center justify-center mb-6">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-black text-white mb-3">Formation terrain</h3>
+        <p class="text-sm leading-relaxed mb-4" style="color:rgba(255,255,255,.7);">
+          Des formations concrètes, ancrées dans la réalité de votre secteur. Pas de PowerPoint théoriques — des outils que vos équipes utilisent dès le lendemain.
+        </p>
+        <ul class="text-sm space-y-2" style="color:rgba(255,255,255,.7);">
+          <li class="flex gap-2"><span style="color:#B8996A;font-weight:700;">→</span> Formats sur-mesure (0,5 à 3 jours)</li>
+          <li class="flex gap-2"><span style="color:#B8996A;font-weight:700;">→</span> Inter ou intra-entreprise</li>
+          <li class="flex gap-2"><span style="color:#B8996A;font-weight:700;">→</span> Suivi post-formation inclus</li>
+        </ul>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="bg-white border border-[#E8DCC8] rounded-3xl p-8">
+        <div class="w-12 h-12 bg-[#122F42] rounded-2xl flex items-center justify-center mb-6">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color:#B8996A;">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-black text-[#0F2A3A] mb-3">Conférences</h3>
+        <p class="text-slate-500 text-sm leading-relaxed mb-4">
+          Des prises de parole qui font bouger les lignes. Pour vos séminaires, forums, événements professionnels — des interventions documentées, engagées et mémorables.
+        </p>
+        <ul class="text-sm text-slate-500 space-y-2">
+          <li class="flex gap-2"><span style="color:#B8996A;font-weight:700;">→</span> Keynotes & tables rondes</li>
+          <li class="flex gap-2"><span style="color:#B8996A;font-weight:700;">→</span> Formats 30 min à 2h</li>
+          <li class="flex gap-2"><span style="color:#B8996A;font-weight:700;">→</span> Présentiel ou distanciel</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BLOG / ARTICLES -->
+<section id="blog" class="py-20 px-4 bg-[#EDE6D0]">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-14">
+      <span class="badge mb-4">Ressources</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-[#0F2A3A]">Nos articles de fond</h2>
+      <p class="text-slate-500 mt-3 max-w-xl mx-auto">Des analyses documentées sur les enjeux des organisations qui traversent le changement.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-6">
+
+      <a href="./article-associations.html" class="card-article block bg-white border border-[#E8DCC8] rounded-3xl p-7 no-underline">
+        <span class="badge mb-4 block w-fit">Associations</span>
+        <h3 class="text-xl font-black text-[#0F2A3A] leading-tight mb-3">
+          Associations : sortir de la survie
+        </h3>
+        <p class="text-slate-500 text-sm leading-relaxed mb-5">
+          La majorité des associations françaises vivent dans une précarité structurelle permanente. Ce n'est pas une fatalité — mais en sortir exige un changement de posture radical.
+        </p>
+        <div class="flex items-center justify-between text-xs text-slate-400">
+          <span>Lecture : 7 min</span>
+          <span style="color:#B8996A;font-weight:700;">Lire l'article →</span>
+        </div>
+      </a>
+
+      <a href="./article-formations.html" class="card-article block bg-white border border-[#E8DCC8] rounded-3xl p-7 no-underline">
+        <span class="badge mb-4 block w-fit">Formation</span>
+        <h3 class="text-xl font-black text-[#0F2A3A] leading-tight mb-3">
+          Pourquoi vos formations ne changent rien
+        </h3>
+        <p class="text-slate-500 text-sm leading-relaxed mb-5">
+          Des milliards investis chaque année en formation professionnelle. Des équipes qui retournent au bureau comme si rien ne s'était passé. Ce n'est pas un problème de budget.
+        </p>
+        <div class="flex items-center justify-between text-xs text-slate-400">
+          <span>Lecture : 6 min</span>
+          <span style="color:#B8996A;font-weight:700;">Lire l'article →</span>
+        </div>
+      </a>
+
+      <a href="./article-ia-insertion.html" class="card-article block bg-white border border-[#E8DCC8] rounded-3xl p-7 no-underline">
+        <span class="badge mb-4 block w-fit">IA & Emploi</span>
+        <h3 class="text-xl font-black text-[#0F2A3A] leading-tight mb-3">
+          IA et insertion : la prochaine rupture
+        </h3>
+        <p class="text-slate-500 text-sm leading-relaxed mb-5">
+          L'intelligence artificielle ne va pas seulement transformer les métiers. Elle va fracturer le marché de l'emploi entre ceux qui s'y préparent et ceux qu'elle laisse derrière.
+        </p>
+        <div class="flex items-center justify-between text-xs text-slate-400">
+          <span>Lecture : 8 min</span>
+          <span style="color:#B8996A;font-weight:700;">Lire l'article →</span>
+        </div>
+      </a>
+
+      <a href="./article-tiers-lieux.html" class="card-article block bg-white border border-[#E8DCC8] rounded-3xl p-7 no-underline">
+        <span class="badge mb-4 block w-fit">Tiers-Lieux</span>
+        <h3 class="text-xl font-black text-[#0F2A3A] leading-tight mb-3">
+          Tiers-lieux : l'illusion de la communauté
+        </h3>
+        <p class="text-slate-500 text-sm leading-relaxed mb-5">
+          En dix ans, les tiers-lieux sont passés de 400 à plus de 3 500 en France. Mais derrière l'effervescence, beaucoup peinent à tenir économiquement. Qu'est-ce qui fait vraiment tenir un tiers-lieu ?
+        </p>
+        <div class="flex items-center justify-between text-xs text-slate-400">
+          <span>Lecture : 7 min</span>
+          <span style="color:#B8996A;font-weight:700;">Lire l'article →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 px-4">
+  <div class="max-w-2xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="badge mb-4">Contact</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-[#0F2A3A]">Parlons de votre situation</h2>
+      <p class="text-slate-500 mt-3">
+        Que ce soit pour une mission de transition, une formation ou une conférence,
+        chaque engagement commence par une conversation franche.
+      </p>
+    </div>
+
+    <div class="bg-white border border-[#E8DCC8] rounded-3xl p-8 sm:p-10">
+      <form action="https://formspree.io/f/votre-id" method="POST" class="space-y-5">
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label class="block text-sm font-semibold text-[#0F2A3A] mb-2">Prénom & Nom</label>
+            <input type="text" name="name" placeholder="Marie Dupont" required
+              class="w-full border border-[#E8DCC8] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#B8996A] bg-[#FAF6EC]"/>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-[#0F2A3A] mb-2">Organisation</label>
+            <input type="text" name="organization" placeholder="Votre structure"
+              class="w-full border border-[#E8DCC8] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#B8996A] bg-[#FAF6EC]"/>
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-[#0F2A3A] mb-2">Email</label>
+          <input type="email" name="email" placeholder="marie@votre-orga.fr" required
+            class="w-full border border-[#E8DCC8] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#B8996A] bg-[#FAF6EC]"/>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-[#0F2A3A] mb-2">Type de besoin</label>
+          <select name="type" class="w-full border border-[#E8DCC8] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#B8996A] bg-[#FAF6EC] text-slate-600">
+            <option value="">Choisir...</option>
+            <option>Management de transition</option>
+            <option>Formation terrain</option>
+            <option>Conférence / Intervention</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-[#0F2A3A] mb-2">Votre message</label>
+          <textarea name="message" rows="4" placeholder="Décrivez brièvement votre situation et ce que vous recherchez..." required
+            class="w-full border border-[#E8DCC8] rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#B8996A] bg-[#FAF6EC] resize-none"></textarea>
+        </div>
+        <button type="submit"
+          class="w-full bg-[#122F42] hover:bg-[#0D2B3E] text-white font-semibold py-4 rounded-full transition-colors text-base">
+          Envoyer le message →
+        </button>
+      </form>
+    </div>
+
+    <p class="text-center text-sm text-slate-400 mt-6">
+      Ou directement par email :
+      <a href="mailto:contact@horizons-communs.fr" class="text-[#B8996A] font-semibold hover:underline">contact@horizons-communs.fr</a>
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#0D2B3E] py-8 mt-4">
+  <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div class="flex items-center gap-2">
+      <img src="./logo-hc.svg" alt="Horizons Communs" class="h-6 w-auto" style="filter:brightness(0) invert(1);opacity:.7;"/>
+      <span class="text-slate-400 text-sm font-semibold">Horizons Communs</span>
+    </div>
+    <div class="flex gap-6 text-sm text-slate-500">
+      <a href="#services" class="hover:text-white transition-colors">Services</a>
+      <a href="#blog" class="hover:text-white transition-colors">Articles</a>
+      <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+    </div>
+    <p class="text-slate-600 text-xs">© 2026 Horizons Communs</p>
+  </div>
+</footer>
+
+</body>
+</html>
